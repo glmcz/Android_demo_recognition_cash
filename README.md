@@ -18,6 +18,32 @@ First install NDK, and set path for NDK tools, and then type commands below to c
 
 How to train custom models with inception and docker
 
+Prerequites
+
+clone tensorflow recursively
+
+enable android support in workspace
+# Uncomment and update the paths in these entries to build the Android demo. Api 23 is default
+android_sdk_repository(
+    name = "androidsdk",
+    api_level = 22,
+    build_tools_version = "22.0.1",
+    # Replace with path to Android SDK on your system
+    path = "/media/glm/linux/",
+)
+#
+android_ndk_repository(
+    name="androidndk",
+    # Replace with path to Android SDK on your system
+    path="/media/glm/linux/android-ndk-r12b",
+    api_level=21)
+
+run ./configure
+make
+make install
+
+install with pip....
+
 install docker
 
 docker run -it -v $HOME/bankovky:/last  gcr.io/tensorflow/tensorflow:latest-devel
