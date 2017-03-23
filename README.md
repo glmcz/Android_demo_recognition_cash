@@ -89,3 +89,5 @@ bazel-bin/tensorflow/python/tools/freeze_graph \
 --output_graph=/home/glm/bazel/frozen.pb 
 --output_node_names=end
 
+If you like to create model from scratch with custom architecture, click to link described below. 
+https://github.com/glmcz/Custom_model_of_Tensorflow_tutorial
